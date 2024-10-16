@@ -1,0 +1,12 @@
+2024-10-16 19:33:15,643 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-10-16 19:33:15,645 INFO supervisord started with pid 35
+2024-10-16 19:33:16,647 INFO spawned: 'roadrunner' with pid 36
+2024-10-16 19:33:16,649 INFO spawned: 'consumers' with pid 37
+2024-10-16 19:33:17,972 INFO success: roadrunner entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-16 19:33:17,972 INFO success: consumers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-16 19:33:34,883 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-10-16 19:33:34,884 INFO supervisord started with pid 35
+2024-10-16 19:33:35,887 INFO spawned: 'roadrunner' with pid 36
+2024-10-16 19:33:35,889 INFO spawned: 'consumers' with pid 37
+2024-10-16 19:33:37,089 INFO success: roadrunner entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-10-16 19:33:37,089 INFO success: consumers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
