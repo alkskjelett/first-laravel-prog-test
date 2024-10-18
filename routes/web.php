@@ -7,4 +7,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/api/form', [FormController::class, 'processForm']);
+Route::post('/api/form', [FormController::class, 'processForm'])
+    ->withoutMiddleware(\Illuminate\Foundation\Http\Middleware\ValidateCsrfToken::class);

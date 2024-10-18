@@ -15,7 +15,7 @@ class MailSendService extends Mailable implements ShouldQueue
     use Queueable, SerializesModels;
 
     public function __construct(
-        private MailMessage $mailMessage,
+        private readonly MailMessage $mailMessage,
     ) {}
 
     public function envelope(): Envelope
@@ -31,7 +31,12 @@ class MailSendService extends Mailable implements ShouldQueue
         return new Content(
             view: 'mail_message',
             with: [
-                'content' => $this->mailMessage->content,
+                'name' => $this->mailMessage->personData->name,
+                'email' => $this->mailMessage->personData->email,
+                'phone' => $this->mailMessage->personData->phone,
+                'profession' => $this->mailMessage->personData->profession,
+                'area' => $this->mailMessage->personData->area,
+                'product' => $this->mailMessage->personData->product,
             ]
         );
     }

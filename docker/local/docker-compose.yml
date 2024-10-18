@@ -54,8 +54,11 @@ services:
         RELAY_PORT: $RELAY_PORT
         RELAY_USERNAME: $RELAY_USERNAME
         RELAY_PASSWORD: $RELAY_PASSWORD
+        RELAY_NETS: 0.0.0.0/0, 127.0.0.1/32, 172.22.0.1/32, 172.22.0.5/32
     ports:
         - "587:587"
+    networks:
+        - test-lara
 
 volumes:
   db_lara_data:
